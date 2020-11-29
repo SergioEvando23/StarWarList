@@ -1,5 +1,5 @@
 const vehicles = {
-    {
+    
         "count": 39,
         "next": "http://swapi.dev/api/vehicles/?page=2",
         "previous": null,
@@ -216,6 +216,6 @@ const vehicles = {
             "url": "http://swapi.dev/api/vehicles/24/"
           }
         ]
-      }
+      
 }
 export default vehicles

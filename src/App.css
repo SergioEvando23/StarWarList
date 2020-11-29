@@ -1,21 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
 
 div.app {
-  width: 100vw;
-  background-color: #020111;
+  width: auto;
   height: 100vh;
-  
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-image: url("https://uhdwallpapers.org/uploads/converted/19/01/13/storm-trooper-from-starwars-1366x768_949965-mm-90.jpg");
 }
 
 div.app > div.app__header{
-  background-color: #0a0a0a;
+  background-color: #01010a;
   height: 2em;
   color: #ffffff;
   text-align: right;
   padding: 1em;
   font-family: 'Orbitron', sans-serif;
+  width: auto;
 }
-div.app > div.app__header > div.app__app-header__app-header-img {
+div.app > div.app__header > div.app__app-header__app-header-simbol{
   text-align: left;
   display: flex;
   flex: 1;

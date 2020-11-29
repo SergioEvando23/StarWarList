@@ -16,7 +16,7 @@ function App() {
         <Button variant="outlined" color="primary" > <PublicIcon/>PLANET </Button>
         <Button variant="outlined" color="primary" > <EventSeatIcon/>VEHICLE </Button>
         </div> 
-        <div className="app__app-header__app-header-img">
+        <div className="app__app-header__app-header-simbol">
           StarWars
         </div>
       </div> 

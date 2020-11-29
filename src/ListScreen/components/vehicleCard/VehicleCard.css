@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
-
-div.character-card {
+div.vehicle-card {
     color: #eee5e5;
     font-family: 'Orbitron', sans-serif;
     padding: 1em;

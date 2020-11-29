@@ -1,5 +1,5 @@
 const planets = {
-    {
+    
         "count": 60,
         "next": "http://swapi.dev/api/planets/?page=2",
         "previous": null,
@@ -238,5 +238,5 @@ const planets = {
           }
         ]
       }
-} 
+
 export default planets

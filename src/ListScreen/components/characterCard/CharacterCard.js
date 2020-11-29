@@ -1,10 +1,10 @@
 import React from 'react';
 import './CharacterCard.css';
 
-const CharacterCard = props => {
+const CharacterCard = ({personagemCard})=> {
     return (
         <div className="character-card">
-            CharacterCard
+            {personagemCard}
         </div>
     );
 };
