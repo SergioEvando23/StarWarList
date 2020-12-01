@@ -37,7 +37,7 @@ const ListScreen = props => {
     return (
         <div className="list-screen">
             CHARACTERS 
-            <div className="list-screen__personagem">  
+            <div className="list-screen__personagem-card">  
                 {personagemCard}
             </div> 
             PLANETS

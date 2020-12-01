@@ -14,7 +14,7 @@ div.list-screen {
 
 }
 
-div.list-screen > div.list-screen__personagem {
+div.list-screen > div.list-screen__personagem-card {
     color: azure;
     display: flex;
     flex-wrap: wrap; 
