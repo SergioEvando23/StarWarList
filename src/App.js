@@ -1,7 +1,7 @@
 import React from "react";
 import './App.css';
 import DetailScreen from './DetailScreen/DetailScreen';
-// import ListScreen from './ListScreen/ListScreen';
+import ListScreen from './ListScreen/ListScreen';
 import Button from '@material-ui/core/Button';
 import HomeIcon from '@material-ui/icons/Home';
 import EventSeatIcon from '@material-ui/icons/EventSeat';
@@ -21,7 +21,7 @@ function App() {
         </div>
       </div> 
       <div className="app__pages">
-        {/* <ListScreen /> */}
+        <ListScreen />
         <DetailScreen /> 
       </div>
     </div>

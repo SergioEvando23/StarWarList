@@ -4,5 +4,6 @@ div.detail-screen {
     width: 100vw;
     text-align: center;
     justify-content: center;
+    overflow-y: scroll;
     
 }
