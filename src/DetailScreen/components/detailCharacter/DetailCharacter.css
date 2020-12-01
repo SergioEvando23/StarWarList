@@ -11,11 +11,8 @@ div.detail-character {
     font-family: 'Share Tech Mono', monospace;
     text-align: center;
     font-size: xx-large;
-    margin-top: 15vh;
-    margin-bottom: 15vh;
-    margin-right: 15vw;
-    margin-left: 15vw;
-
+    margin: 3vh 15vw 5vh 15vw;
+    padding-top: 2em;
 }
 
 div.detail-character > div.detail-character__detail-character-info {
@@ -24,5 +21,5 @@ div.detail-character > div.detail-character__detail-character-info {
     font-family: 'Share Tech Mono', monospace;
     text-align: left;
     font-size: large;
-    padding: 3em;
+    padding: 1em 3em 3em 3em;
 }

@@ -18,7 +18,7 @@ const DetailScreen = props => {
             clima={planeta?.climate} terreno={planeta?.terrain} agua={planeta?.surface_water} populacao={planeta?.population} /> 
 
             <DetailVehicles nome={veiculo?.name} carga={veiculo?.cargo_capacity} tripulacao={veiculo?.passengers} velocidade={veiculo?.max_atmosphering_speed}
-            consumiveis={veiculo?.consumables} comprimento={veiculo?.consumables} modelo={veiculo?.model} fabricante={veiculo?.manufacturer} />
+            consumiveis={veiculo?.consumables} comprimento={veiculo?.length} modelo={veiculo?.model} fabricante={veiculo?.manufacturer} />
         </div> 
     );
 };
