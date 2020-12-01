@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+div.detail-vehicles {
+    border-radius:10px;
+    border: 2px solid #949494d9;
+    color: #228b22;
+    background-color: #0000008b;
+    width: 30em;
+    height: 15em;
+    justify-content: center;
+    font-family: 'Share Tech Mono', monospace;
+    text-align: center;
+    font-size: xx-large;
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+    margin-right: 15vw;
+    margin-left: 15vw;
+
+}
+
+div.detail-vehicles > div.detail-vehicles__detail-vehicles-info {
+    color: #1e761e;
+    margin-top: 10px;
+    font-family: 'Share Tech Mono', monospace;
+    text-align: left;
+    font-size: large;
+    padding: 3em;
+    
+}
