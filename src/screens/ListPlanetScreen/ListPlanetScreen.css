@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
-div.list-people-screen {
+
+div.list-planet-screen {
     color: azure;
     font-family: 'Orbitron', sans-serif;
     font-size: larger;
@@ -11,21 +12,9 @@ div.list-people-screen {
     margin-bottom: 1em;
 }
 
-div.list-people-screen > div.list-people-screen__personagem-card {
+div.list-planet-screen > div.list-planet-screen__planet-card {
     color: azure;
     display: flex;
     flex-wrap: wrap; 
     justify-content: space-evenly;
-    
 }
-/* 
-
-
-div.list-screen > div.list-screen__vehicle-card {
-    color: azure;
-    display: flex;
-    flex-wrap: wrap; 
-    overflow-x: hidden;
-    justify-content: space-evenly;
-} */
-

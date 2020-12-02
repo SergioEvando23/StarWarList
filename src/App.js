@@ -2,6 +2,7 @@ import React from "react";
 import './App.css';
 import DetailScreen from './screens/DetailScreen/DetailScreen';
 import ListPeopleScreen from './screens/ListPeopleScreen/ListPeopleScreen';
+import ListPlanetScreen from './screens/ListPlanetScreen/ListPlanetScreen';
 import Button from '@material-ui/core/Button';
 import HomeIcon from '@material-ui/icons/Home';
 import EventSeatIcon from '@material-ui/icons/EventSeat';
@@ -17,7 +18,7 @@ function App() {
         <div className="app__header"> 
           <div className="app__app-header__buttons"> 
           <Link to="/"><Button variant="outlined" color="primary" ><HomeIcon/>HOME </Button></Link>
-          <Link to="/"><Button variant="outlined" color="primary" ><PublicIcon/>PLANET </Button></Link>
+          <Link to="/planet"><Button variant="outlined" color="primary" ><PublicIcon/>PLANET </Button></Link>
           <Link to="/"><Button variant="outlined" color="primary" ><EventSeatIcon/>VEHICLE </Button></Link>
           </div> 
           <div className="app__app-header__app-header-simbol">
@@ -29,6 +30,7 @@ function App() {
           <DetailScreen />  */}
         </div>
         <Switch>
+          <Route exact path="/planet" component={ListPlanetScreen} />
           <Route exact path="/detail" component={DetailScreen} />
           <Route exact path="/" component={ListPeopleScreen} />
         </Switch>
