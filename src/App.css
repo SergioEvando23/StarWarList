@@ -3,7 +3,6 @@
 div.app {
   width: auto;
   height: 100vh;
-  overflow-y: scroll;
   overflow-x: hidden;
   background-image: url("https://uhdwallpapers.org/uploads/converted/19/01/13/storm-trooper-from-starwars-1366x768_949965-mm-90.jpg");
 }

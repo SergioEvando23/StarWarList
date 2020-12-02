@@ -1,8 +1,8 @@
 import React from 'react';
 import './DetailScreen.css';
-import personagem from '../__mocks__/personagem';
-import planeta from '../__mocks__/planeta';
-import veiculo from '../__mocks__/veiculo';
+import personagem from '../../__mocks__/personagem';
+import planeta from '../../__mocks__/planeta';
+import veiculo from '../../__mocks__/veiculo';
 import DetailCharacter from './components/detailCharacter/DetailCharacter';
 import DetailVehicles from './components/detailVehicles/DetailVehicles';
 import DetailPlanets from './components/detailPlanets/DetailPlanets';
