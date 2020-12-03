@@ -4,6 +4,7 @@ import  './ListPeopleScreen.css';
 // import characters from '../../__mocks__/characteres';
 import axios from '../../core/axios.config';
 import CharacterCard from './characterCard/CharacterCard';
+import {BASE_URL} from '../../core/constants'
 
 const ListPeopleScreen = props => {
     const [people, setPeople] = useState({});
@@ -15,9 +16,12 @@ const ListPeopleScreen = props => {
     }, [])
 
     const personagemCard = people?.results?.map ((personagem, index) => {
+        const url = personagem?.url;
+        const parsedUrl = url.replace(BASE_URL, "");
+            
         return(
             <div key={index}>
-               <Link to="/detail"><CharacterCard personagemCard={personagem?.name}/></Link>
+               <Link to={`/detail?url=${parsedUrl}`}><CharacterCard personagemCard={personagem?.name}/></Link>
             </div>
         )
     });
