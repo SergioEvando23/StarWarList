@@ -1,9 +1,9 @@
 import React, {useEffect, useState} from 'react';
 import './ListPlanetScreen.css'
-// import planets from '../../__mocks__/planets';
 import PlanetCard from './planetCard/PlanetCard';
 import {Link } from 'react-router-dom';
-import axios from '../../core/axios.config'
+import axios from '../../core/axios.config';
+import {BASE_URL} from '../../core/constants';
 
 
 const ListPlanetScreen = props => {
@@ -15,13 +15,17 @@ const ListPlanetScreen = props => {
         })).catch(console.error)
     },[])
 
+
     const planetCard = planets?.results?.map((planet, index) => {
-            return ( 
-                <div key={index}>
-                 <Link to="/detail"><PlanetCard planetCard={planet?.name} /></Link>  
-                </div>
-            )
-        });
+        const url = planet.url;
+        const parsedUrl = url.replace(BASE_URL,"")
+
+        return ( 
+            <div key={index}>
+                <Link to={`/planetdetail?url=${parsedUrl}`}><PlanetCard planetCard={planet?.name} /></Link>  
+            </div>
+        )
+     });
     return (
         <div className="list-planet-screen">
             PLANETS    

@@ -1,6 +1,8 @@
 import React from "react";
 import './App.css';
-import DetailScreen from './screens/DetailScreen/DetailScreen';
+import DetailPeopleScreen from './screens/DetailPeopleScreen/DetailPeopleScreen';
+import DetailPlanetScreen from './screens/DetailPlanetScreen/DetailPlanetScreen';
+import DetailVehicleScreen from './screens/DetailVehicleScreen/DetailVehicleScreen';
 import ListPeopleScreen from './screens/ListPeopleScreen/ListPeopleScreen';
 import ListPlanetScreen from './screens/ListPlanetScreen/ListPlanetScreen';
 import ListVehicleScreen from './screens/ListVehicleScreen/ListVehicleScreen';
@@ -9,8 +11,6 @@ import HomeIcon from '@material-ui/icons/Home';
 import EventSeatIcon from '@material-ui/icons/EventSeat';
 import PublicIcon from '@material-ui/icons/Public';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-
-
 
 function App() {
   return (
@@ -34,7 +34,9 @@ function App() {
           <Route exact path="/" component={ListPeopleScreen} />
           <Route exact path="/planet" component={ListPlanetScreen} />
           <Route exact path="/vehicle" component={ListVehicleScreen} />
-          <Route exact path="/detail" component={DetailScreen} />
+          <Route exact path="/peopledetail/" component={DetailPeopleScreen} />
+          <Route exact path="/planetdetail/" component={DetailPlanetScreen} />
+          <Route exact path="/vehicledetail/" component={DetailVehicleScreen} />
         </Switch>
       </div>
     </Router>

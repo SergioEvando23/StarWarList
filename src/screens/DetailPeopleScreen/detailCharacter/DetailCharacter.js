@@ -14,9 +14,9 @@ const DetailCharacter = ({nome, cabelo, ano, genero, peso,  altura, pele, olhos 
 
             <p>GENDER: {genero}</p>
 
-            <p>MASS: {peso} </p>
+            <p>MASS: {peso}kg </p>
 
-            <p>HEIGHT: {altura} </p>
+            <p>HEIGHT: {altura}cm </p>
 
             <p>SKIN COLOR: {pele} </p>
 

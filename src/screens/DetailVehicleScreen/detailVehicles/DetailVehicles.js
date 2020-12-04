@@ -8,15 +8,15 @@ const DetailVehicles = ({nome, carga, tripulacao, velocidade, consumiveis, compr
             <div className="detail-vehicles__detail-vehicles-info">
             <p>NAME: {nome} </p>
 
-            <p>CARGO CAPACITY: {carga} </p>
+            <p>CARGO CAPACITY: {carga} Kg</p>
 
-            <p>CREW: {tripulacao} </p>
+            <p>CREW: {tripulacao} manning </p>
 
-            <p>MAX SPEED: {velocidade}</p>
+            <p>MAX SPEED: {velocidade} anos-luz/h</p>
 
-            <p>CONSUMABLES: {consumiveis} </p>
+            <p>CONSUMABLES: {consumiveis} Kg</p>
 
-            <p>LENGHT: {comprimento} </p>
+            <p>LENGHT: {comprimento} m²</p>
 
             <p>MODEL: {modelo} </p>
 

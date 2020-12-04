@@ -2,8 +2,8 @@ import React, {useEffect, useState} from 'react';
 import {Link} from 'react-router-dom';
 import './ListVehicleScreen.css';
 import VehiclesCard from './vehicleCard/VehicleCard';
-// import vehicles from '../../__mocks__/vehicles';
 import axios from '../../core/axios.config';
+import {BASE_URL} from '../../core/constants';
 
 const ListVehicleScreen = props => {
     const [vehicles, setVehicles] = useState({});
@@ -15,10 +15,13 @@ const ListVehicleScreen = props => {
     },[])
 
 
-    const vehicleCard = vehicles?.results?.map((vehicles) => {
+    const vehicleCard = vehicles?.results?.map((vehicles, index) => {
+        const url = vehicles.url;
+        const parsedUrl = url.replace(BASE_URL,"")
+
         return(
-            <div>
-              <Link to="/detail"><VehiclesCard vehicleCard={vehicles.name}/></Link>  
+            <div key={index}>
+              <Link to={`/vehicledetail?url=${parsedUrl}`}><VehiclesCard vehicleCard={vehicles.name}/></Link>  
             </div>
         )
     });
